@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Todo List</title>
 </head>
 <body>
-    <p>It's a <%= type %>!</p>
-    <h1>Today is <%= todayIs %></h1>
+
+    <div class="box" id="heading">
+        <h1> <%= type %> </h1>
+    </div>
     
+    <div class="box">
+        <% for (var i=0; i < taskitem.length; i++){ %>
+            <div class="item">
+                <input type="checkbox">
+                <p> <%= taskitem[i] %>  </p>
+            </div>
+            <% } %>
+    </div>
+    <form action="/" method="POST">
+        <input type="text" id="task" name="task" required autofocus autocomplete="off">
+        <button type="submit">+</button>
+    </form>
+    <ul id="tasklist">
+        
+         
+       
+  
+
+    <script type="module" src="app.js"></script>
 </body>
 </html>

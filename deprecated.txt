@@ -1,0 +1,11 @@
+ejs
+    <!-- <% if (todayIs === "Sunday"){ %>
+        <h1 style="color:purple"><%=todayIs%>
+        Todo List</h1>
+        <% } else { %>
+        <h1 style="color:blue"><%=todayIs%>
+            Todo List</h1>
+        <% } 
+        %> -->
+    <!-- <p>It's a <%= type %>!</p>
+    <h1>Today is <%= todayIs %></h1> -->
